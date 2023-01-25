@@ -61,8 +61,9 @@ public class HandleFiles {
     }
 
     public void writeToFile(String content) throws IOException {
-        FileWriter writer = new FileWriter(this.newFileName);
+        BufferedWriter writer = new BufferedWriter(new FileWriter(this.newFileName));
         writer.write(content);
+        writer.close();
         System.out.println("Successfully wrote to the file.");
     }
 
