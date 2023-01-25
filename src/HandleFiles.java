@@ -95,7 +95,12 @@ public class HandleFiles {
                     if (j == 0) {
                         String pathStr = this.filePaths.get(i);
                         String removeSrc = pathStr.substring(0,pathStr.length()-4);
-                        content += "\n**************"+removeSrc.toUpperCase()+"********************\n";
+                        if (removeSrc.endsWith("/")) {
+                            removeSrc = removeSrc.substring(0,removeSrc.length()-1);
+                        }
+                        int lastToRemove = removeSrc.lastIndexOf("/") + 1;
+                        String projectName = removeSrc.substring(lastToRemove);
+                        content += "\n******************** "+projectName.toUpperCase()+" ********************\n";
                     }
                     content += readContentToString(filePath);
                 }
