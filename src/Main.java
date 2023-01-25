@@ -11,10 +11,13 @@ public class Main {
         filePaths.add("/C:/Projects/School/Ohjelmointi2/viikko2/tehtava4/src/");
         filePaths.add("/C:/Projects/School/Ohjelmointi2/viikko2/tehtava7/src");
 
-        // Add test to see if file ends with .txt
         HandleFiles input1 = new HandleFiles("output.txt", "/C:/Projects/School/Ohjelmointi2/", filePaths, ".java");
-        //ArrayList<String[]> output = input1.listFilesFromEach();
-        //System.out.println(output);
-
+        ArrayList<String[]> files = input1.listFilesFromEach();
+        for (int i = 0; i < files.size(); i++) {
+            String[] a = files.get(i);
+            for (int j = 0; j < a.length; j++) {
+                System.out.println(a[j]);
+            }
+        }
     }
 }

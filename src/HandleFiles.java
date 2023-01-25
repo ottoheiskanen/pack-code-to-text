@@ -91,8 +91,15 @@ public class HandleFiles {
                 }
 
                 if (filePath.endsWith( this.extension )) {
+                    // Identify each project at the start of this loop
+                    if (j == 0) {
+                        String pathStr = this.filePaths.get(i);
+                        String removeSrc = pathStr.substring(0,pathStr.length()-4);
+                        content += "\n**************"+removeSrc.toUpperCase()+"********************\n";
+                    }
                     content += readContentToString(filePath);
                 }
+
             }
         }
         createFile();

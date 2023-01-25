@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="fixed the bug where part of the txt got corrupted">
+    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="File output location pathing added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HandleFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandleFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -69,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674672639066</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="File output location pathing added">
+      <created>1674674926602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674674926602</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +94,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="commit..." />
     <MESSAGE value="fixed the bug where part of the txt got corrupted" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the bug where part of the txt got corrupted" />
+    <MESSAGE value="File output location pathing added" />
+    <option name="LAST_COMMIT_MESSAGE" value="File output location pathing added" />
   </component>
 </project>
