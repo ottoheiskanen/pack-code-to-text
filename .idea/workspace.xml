@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="commit...">
+    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="fixed the bug where part of the txt got corrupted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HandleFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandleFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674671086443</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed the bug where part of the txt got corrupted">
+      <created>1674672639066</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674672639066</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +86,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="commit..." />
-    <option name="LAST_COMMIT_MESSAGE" value="commit..." />
+    <MESSAGE value="fixed the bug where part of the txt got corrupted" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the bug where part of the txt got corrupted" />
   </component>
 </project>

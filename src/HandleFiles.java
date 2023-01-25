@@ -6,11 +6,18 @@ public class HandleFiles {
     private String newFileName;
     private String newFileLocation;
     private ArrayList<String> filePaths;
+    private String extension;
 
-    public HandleFiles(String newFileName, String newFileLocation, ArrayList<String> filePaths) throws IOException {
+    public HandleFiles(String newFileName, String newFileLocation, ArrayList<String> filePaths, String extension) throws IOException {
         this.newFileName = newFileName;
         this.newFileLocation = newFileLocation;
         this.filePaths = filePaths;
+        this.extension = extension;
+
+        // Check if location path ends with slash or not
+        if (!(this.newFileLocation.endsWith("/"))) {
+            this.newFileLocation += "/";
+        }
 
         this.readFilesFromPath( listFilesFromEach() );
     }
@@ -32,8 +39,8 @@ public class HandleFiles {
         return filesFromEach;
     }
 
-    //read given .java file
-    public String readJavaFile(String path) throws IOException {
+    // Read given .extension file
+    public String readContentToString(String path) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader( path ));
         StringBuilder stringBuilder = new StringBuilder();
         String line = null;
@@ -46,13 +53,13 @@ public class HandleFiles {
         stringBuilder.deleteCharAt(stringBuilder.length() - 1);
         reader.close();
 
-        String javaCode = stringBuilder.toString();
+        String content = stringBuilder.toString();
 
-        return javaCode;
+        return content;
     }
 
     public void createFile() throws IOException {
-        File fileObj = new File(this.newFileName);
+        File fileObj = new File(this.newFileLocation, this.newFileName);
         if (fileObj.createNewFile()) {
             System.out.println("File created: " + fileObj.getName());
         } else {
@@ -61,13 +68,14 @@ public class HandleFiles {
     }
 
     public void writeToFile(String content) throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter(this.newFileName));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(this.newFileLocation + this.newFileName));
         writer.write(content);
         writer.close();
         System.out.println("Successfully wrote to the file.");
     }
 
-    // Read all .java files related to each individual project folder and save them into an output .txt file
+    // Read all files that are marked with right file extension and saved in their corresponding project folders
+    // after that save them into an output .txt file in the right order
     public void readFilesFromPath(ArrayList<String[]> files) throws IOException {
         String content = "";
         for (int i = 0; i < this.filePaths.size(); i++) {
@@ -82,16 +90,13 @@ public class HandleFiles {
                     filePath = this.filePaths.get(i)+a[j];
                 }
 
-                if (filePath.endsWith(".java")) {
-                    //System.out.println(filePath);
-                    //System.out.println( readJavaFile(filePath) );
-                    content += readJavaFile(filePath);
+                if (filePath.endsWith( this.extension )) {
+                    content += readContentToString(filePath);
                 }
             }
         }
         createFile();
         writeToFile(content);
-        //System.out.println(content);
     }
 
 }

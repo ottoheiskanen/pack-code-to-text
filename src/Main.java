@@ -12,7 +12,7 @@ public class Main {
         filePaths.add("/C:/Projects/School/Ohjelmointi2/viikko2/tehtava7/src");
 
         // Add test to see if file ends with .txt
-        HandleFiles input1 = new HandleFiles("output.txt", "asd", filePaths);
+        HandleFiles input1 = new HandleFiles("output.txt", "/C:/Projects/School/Ohjelmointi2/", filePaths, ".java");
         //ArrayList<String[]> output = input1.listFilesFromEach();
         //System.out.println(output);
 
