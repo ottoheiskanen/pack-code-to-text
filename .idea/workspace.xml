@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="File output location pathing added">
+    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="Parsing project name from path works well now!!!!">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InputData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HandleFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandleFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -36,7 +39,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,7 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674674926602</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added basic codebase identification">
+      <created>1674676609953</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674676609953</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Parsing project name from path works well now!!!!">
+      <created>1674678819007</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674678819007</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +113,8 @@
     <MESSAGE value="commit..." />
     <MESSAGE value="fixed the bug where part of the txt got corrupted" />
     <MESSAGE value="File output location pathing added" />
-    <option name="LAST_COMMIT_MESSAGE" value="File output location pathing added" />
+    <MESSAGE value="Added basic codebase identification" />
+    <MESSAGE value="Parsing project name from path works well now!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parsing project name from path works well now!!!!" />
   </component>
 </project>
