@@ -32,12 +32,12 @@ public class Window extends JFrame {
         fileExtensionLabel.setBounds(16,16,304,16);
 
         // Extension combo box
-        String[] extensionStrings = {".java", ".py", ".js"};
+        String[] extensionStrings = {".java", ".js"};
         fileExtensionBox = new JComboBox(extensionStrings);
         fileExtensionBox.setBounds(16,32,304, 32);
 
         // File name label
-        fileNameLabel = new JLabel("Lisää UUDEN tekstitiedoston nimi .txt muodossa");
+        fileNameLabel = new JLabel("Lisää UUDEN tekstitiedoston nimi");
         fileNameLabel.setBounds(16+304+16,80,272,16);
 
         // File name input field
@@ -45,7 +45,7 @@ public class Window extends JFrame {
         fileNameInputField.setBounds(16+304+16,96,272,32);
 
         // File location label
-        fileLocationLabel = new JLabel("Lisää polku johon tallennetaan");
+        fileLocationLabel = new JLabel("Lisää polku johon tekstitiedosto tallennetaan");
         fileLocationLabel.setBounds(16,80,304,16);
 
         // File location field

@@ -105,6 +105,7 @@ public class HandleFiles {
                         }
                         int lastToRemove = removeSrc.lastIndexOf("/") + 1;
                         String projectName = removeSrc.substring(lastToRemove);
+
                         content += "\n//******************** "+projectName.toUpperCase()+" ********************\n\n";
                     }
                     content += readContentToString(filePath);
