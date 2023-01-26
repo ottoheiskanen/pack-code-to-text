@@ -5,8 +5,8 @@
 * Make sure to always check the correctness of the output file!
 
 
-    Input example:
+# Example input 
 ![alt text](input.GIF)
 
-    Output example:
+# Example output
 ![alt text](output.GIF)

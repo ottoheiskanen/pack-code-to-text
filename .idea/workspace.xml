@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="Added test case for .txt and made GUI more visually pleasing, also added popup message to file creation">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
+    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="README added.">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674739359478</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="README added.">
+      <created>1674742739338</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674742739338</updated>
+    </task>
+    <task id="LOCAL-00010" summary="README added.">
+      <created>1674742815502</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674742815502</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +140,7 @@
     <MESSAGE value="Parsing project name from path works well now!!!!" />
     <MESSAGE value="Toimii GUI:n kanssa" />
     <MESSAGE value="Added test case for .txt and made GUI more visually pleasing, also added popup message to file creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test case for .txt and made GUI more visually pleasing, also added popup message to file creation" />
+    <MESSAGE value="README added." />
+    <option name="LAST_COMMIT_MESSAGE" value="README added." />
   </component>
 </project>
