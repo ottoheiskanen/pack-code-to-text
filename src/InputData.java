@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
-// Middleware between GUI and file handling
+// Middleware class between GUI and file handling
 public class InputData {
     private String fileExtension;
     private String fileName;
@@ -15,7 +15,6 @@ public class InputData {
         this.locationPath = locationPath;
     }
 
-    //String newFileName, String newFileLocation, ArrayList<String> filePaths, String extension
     public void execute() throws IOException {
         new HandleFiles(this.fileName, this.locationPath, this.filePaths, this.fileExtension);
     }

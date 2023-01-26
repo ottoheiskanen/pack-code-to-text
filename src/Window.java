@@ -15,7 +15,6 @@ public class Window extends JFrame {
     JTextArea inputPane;
     JButton createFileButton;
     JLabel inputLabel;
-
     JOptionPane messageBox ;
 
     public Window() {
