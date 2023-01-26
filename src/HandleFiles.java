@@ -19,6 +19,11 @@ public class HandleFiles {
             this.newFileLocation += "/";
         }
 
+        // Check if file name ends with right extension or not
+        if (!(this.newFileName.endsWith(".txt"))) {
+            this.newFileName += ".txt";
+        }
+
         this.readFilesFromPath( listFilesFromEach() );
     }
 

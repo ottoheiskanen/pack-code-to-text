@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
+// Middleware between GUI and file handling
 public class InputData {
     private String fileExtension;
     private String fileName;
