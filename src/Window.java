@@ -79,8 +79,14 @@ public class Window extends JFrame {
 
                 // Normal array to arraylist for scalability of the program
                 for (int i = 0; i < fileStringArray.length; i++) {
-                    filePaths.add(fileStringArray[i]);
+                    // Test case
+                    fileStringArray[i] = fileStringArray[i].trim();
+                    if (!fileStringArray[i].equals("") ) {
+                        //add
+                        filePaths.add(fileStringArray[i]);
+                    }
                 }
+
                 InputData data = new InputData(extension, fileName, fileLocation, filePaths);
 
                 // Start execution

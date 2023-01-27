@@ -9,10 +9,10 @@ public class HandleFiles {
     private String extension;
 
     public HandleFiles(String newFileName, String newFileLocation, ArrayList<String> filePaths, String extension) throws IOException {
-        this.newFileName = newFileName;
-        this.newFileLocation = newFileLocation;
+        this.newFileName = newFileName.trim();
+        this.newFileLocation = newFileLocation.replace(" ", "");
         this.filePaths = filePaths;
-        this.extension = extension;
+        this.extension = extension.trim();
 
         // Check if location path ends with slash or not
         if (!(this.newFileLocation.endsWith("/"))) {
@@ -22,6 +22,14 @@ public class HandleFiles {
         // Check if file name ends with right extension or not
         if (!(this.newFileName.endsWith(".txt"))) {
             this.newFileName += ".txt";
+        }
+
+        // Check if there is empty line breaks or whitespaces in paths
+        for (int i = 0; i < this.filePaths.size(); i++) {
+            this.filePaths.set(i, this.filePaths.get(i).trim());
+            if (this.filePaths.get(i).equals("")) {
+                this.filePaths.remove(i);
+            }
         }
 
         this.readFilesFromPath( listFilesFromEach() );
