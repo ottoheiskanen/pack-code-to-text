@@ -47,6 +47,7 @@ public class HandleFiles {
                 }
             });
             filesFromEach.add(files);
+            System.out.println(files[i]);
         }
 
         return filesFromEach;
