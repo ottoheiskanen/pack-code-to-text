@@ -8,15 +8,23 @@ public class InputData {
     private String locationPath;
     private ArrayList<String> filePaths;
 
-    public InputData(String fileExtension, String fileName, String locationPath, ArrayList<String> filePaths) {
+    private boolean subDirs;
+
+    public InputData(String fileExtension, String fileName, String locationPath, ArrayList<String> filePaths, boolean subDirs) {
         this.fileName = fileName;
         this.fileExtension = fileExtension;
         this.filePaths = filePaths;
         this.locationPath = locationPath;
+        this.subDirs = subDirs;
     }
 
     public void execute() throws IOException {
-        new HandleFiles(this.fileName, this.locationPath, this.filePaths, this.fileExtension);
+        if (this.subDirs) {
+            RecursiveSearch rs = new RecursiveSearch(this.fileExtension, this.locationPath, this.fileName,this.filePaths);
+            rs.execute();
+        } else {
+            new HandleFiles(this.fileName, this.locationPath, this.filePaths, this.fileExtension);
+        }
     }
 
     // Getters
