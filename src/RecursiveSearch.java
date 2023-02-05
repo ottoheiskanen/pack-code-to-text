@@ -122,7 +122,15 @@ public class RecursiveSearch {
         for (int i = 0; i < files.size(); i++) {
 
             for (int j = 0; j < files.get(i).length; j++) {
-                System.out.println(files.get(i)[j]);
+                // Add project name commented to each project
+                if (j == 0) {
+                    int index = files.get(i)[j].indexOf("/src/");
+                    String projectName = files.get(i)[j].substring(0, index);
+                    int lastSlash = projectName.lastIndexOf("/");
+                    int len = projectName.length();
+                    projectName = projectName.substring(lastSlash, len);
+                    content += "\n// ***************** " + projectName + " *****************\n\n";
+                }
                 content += readContentToString(files.get(i)[j]);
             }
         }

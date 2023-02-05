@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="gui checkbox, optional search added,  !!!still needs testing and project naming!!!">
-      <change afterPath="$PROJECT_DIR$/src/FileCreator.java" afterDir="false" />
+    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="Removed duplicate code by adding FileCreator class. Changed GUI background color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HandleFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RecursiveSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursiveSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675423587453</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Removed duplicate code by adding FileCreator class. Changed GUI background color">
+      <created>1675630086542</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675630086542</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +222,7 @@
     <MESSAGE value="added some if statements and string methods to remove whitespaces and empty entries" />
     <MESSAGE value="added new subdirectory search algorithm file which is still not in use" />
     <MESSAGE value="gui checkbox, optional search added,  !!!still needs testing and project naming!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="gui checkbox, optional search added,  !!!still needs testing and project naming!!!" />
+    <MESSAGE value="Removed duplicate code by adding FileCreator class. Changed GUI background color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed duplicate code by adding FileCreator class. Changed GUI background color" />
   </component>
 </project>
