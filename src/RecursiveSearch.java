@@ -30,7 +30,7 @@ public class RecursiveSearch {
         this.search(this.projectPaths, 0, 0);
         this.separate(this.givenPaths);
 
-        // Measure time
+        // Measure execution time
         long endTime = System.nanoTime();
         long execTime = endTime - startTime;
         System.out.println((double) execTime / 1_000_000_000);
@@ -58,7 +58,6 @@ public class RecursiveSearch {
             return;}
         // for files
         if (arr[index].isFile()) {
-            //System.out.println(arr[index].getName());
             this.allFiles.add(String.valueOf(arr[index]).toLowerCase().replace("\\", "/"));
         } else if (arr[index].isDirectory()) {
             // recursion for sub-directories
@@ -96,8 +95,6 @@ public class RecursiveSearch {
             current = Arrays.stream(current).filter(s -> (s != null && s.length() > 0)).toArray(String[]::new);
             this.projectFiles.add(current);
         }
-        //System.out.println(this.projectFiles.size());
-        //System.out.println(this.projectFiles.get(0).length);
         readPaths(this.projectFiles);
     }
 
@@ -119,20 +116,6 @@ public class RecursiveSearch {
         return content;
     }
 
-    public void createFile(String newFileLocation, String newFileName) throws IOException {
-        File fileObj = new File(newFileLocation, newFileName);
-        if (fileObj.createNewFile()) {
-            System.out.println("File created: " + fileObj.getName());
-        } else {
-            System.out.println("File with the given name already exists...");
-        }
-    }
-    public void writeToFile(String content, String newFileLocation, String newFileName) throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter(newFileLocation + newFileName));
-        writer.write(content);
-        writer.close();
-        System.out.println("Successfully wrote to the file.");
-    }
 
     public void readPaths(ArrayList<String[]> files) throws IOException {
         String content = "";
@@ -143,11 +126,8 @@ public class RecursiveSearch {
                 content += readContentToString(files.get(i)[j]);
             }
         }
-        //HandleFiles hf = new HandleFiles();
-        //hf.createFile(this.newFileLocation, this.newFileName);
-        //hf.writeToFile(content, this.newFileLocation, this.newFileName);
         System.out.println(content);
-        createFile(this.newFileLocation, this.newFileName);
-        writeToFile(content, this.newFileLocation, this.newFileName);
+        FileCreator.createFile(this.newFileLocation, this.newFileName);
+        FileCreator.writeToFile(content, this.newFileLocation, this.newFileName);
     }
 }

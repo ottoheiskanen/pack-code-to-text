@@ -28,7 +28,7 @@ public class Window extends JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         setLayout(null);
-        getContentPane().setBackground(Color.getHSBColor(150, 150, 220));
+        getContentPane().setBackground(Color.decode("#4dc3ff"));
 
         // Extension label
         fileExtensionLabel = new JLabel("Valitse haettavan koodin tiedostomuoto: ");
@@ -72,7 +72,7 @@ public class Window extends JFrame {
 
         // Search checkbox
         searchBox = new JCheckBox();
-        searchBox.setBounds(336, 32, 288, 32);
+        searchBox.setBounds(336, 32, 272, 32);
 
         //Create file button
         createFileButton = new JButton("Luo tiedosto");

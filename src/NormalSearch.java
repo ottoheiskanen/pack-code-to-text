@@ -1,14 +1,13 @@
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class HandleFiles {
+public class NormalSearch {
     private String newFileName;
     private String newFileLocation;
     private ArrayList<String> filePaths;
     private String extension;
 
-    public HandleFiles(String newFileName, String newFileLocation, ArrayList<String> filePaths, String extension) throws IOException {
+    public NormalSearch(String newFileName, String newFileLocation, ArrayList<String> filePaths, String extension) throws IOException {
         this.newFileName = newFileName.trim();
         this.newFileLocation = newFileLocation.replace(" ", "");
         this.filePaths = filePaths;
@@ -72,22 +71,6 @@ public class HandleFiles {
         return content;
     }
 
-    public void createFile() throws IOException {
-        File fileObj = new File(this.newFileLocation, this.newFileName);
-        if (fileObj.createNewFile()) {
-            System.out.println("File created: " + fileObj.getName());
-        } else {
-            System.out.println("File with the given name already exists...");
-        }
-    }
-
-    public void writeToFile(String content) throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter(this.newFileLocation + this.newFileName));
-        writer.write(content);
-        writer.close();
-        System.out.println("Successfully wrote to the file.");
-    }
-
     // Read all files that are marked with right file extension and saved in their corresponding project folders
     // after that save them into an output .txt file in the right order
     public void readFilesFromPath(ArrayList<String[]> files) throws IOException {
@@ -122,8 +105,8 @@ public class HandleFiles {
 
             }
         }
-        createFile();
-        writeToFile(content);
+        FileCreator.createFile(this.newFileLocation, this.newFileName);
+        FileCreator.writeToFile(content, this.newFileLocation, this.newFileName);
     }
 
 }

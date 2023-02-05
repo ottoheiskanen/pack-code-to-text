@@ -23,7 +23,7 @@ public class InputData {
             RecursiveSearch rs = new RecursiveSearch(this.fileExtension, this.locationPath, this.fileName,this.filePaths);
             rs.execute();
         } else {
-            new HandleFiles(this.fileName, this.locationPath, this.filePaths, this.fileExtension);
+            new NormalSearch(this.fileName, this.locationPath, this.filePaths, this.fileExtension);
         }
     }
 

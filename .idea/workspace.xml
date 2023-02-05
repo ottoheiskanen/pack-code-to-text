@@ -9,9 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="added new subdirectory search algorithm file which is still not in use">
+    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="gui checkbox, optional search added,  !!!still needs testing and project naming!!!">
+      <change afterPath="$PROJECT_DIR$/src/FileCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HandleFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursiveSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursiveSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,17 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/2023/java-src-to-txt&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Projects/2023/java-src-to-txt",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -180,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675265194481</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="gui checkbox, optional search added,  !!!still needs testing and project naming!!!">
+      <created>1675423587453</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675423587453</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +218,7 @@
     <MESSAGE value="added whitespace/line break warning" />
     <MESSAGE value="added some if statements and string methods to remove whitespaces and empty entries" />
     <MESSAGE value="added new subdirectory search algorithm file which is still not in use" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new subdirectory search algorithm file which is still not in use" />
+    <MESSAGE value="gui checkbox, optional search added,  !!!still needs testing and project naming!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="gui checkbox, optional search added,  !!!still needs testing and project naming!!!" />
   </component>
 </project>
