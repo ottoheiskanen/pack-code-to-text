@@ -98,25 +98,6 @@ public class RecursiveSearch {
         readPaths(this.projectFiles);
     }
 
-    public String readContentToString(String path) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader( path ));
-        StringBuilder stringBuilder = new StringBuilder();
-        String line = null;
-        String ls = System.getProperty("line.separator");
-        while ((line = reader.readLine()) != null) {
-            stringBuilder.append(line);
-            stringBuilder.append(ls);
-        }
-
-        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
-        reader.close();
-
-        String content = stringBuilder.toString();
-
-        return content;
-    }
-
-
     public void readPaths(ArrayList<String[]> files) throws IOException {
         String content = "";
         for (int i = 0; i < files.size(); i++) {
@@ -131,7 +112,7 @@ public class RecursiveSearch {
                     projectName = projectName.substring(lastSlash, len);
                     content += "\n// ***************** " + projectName + " *****************\n\n";
                 }
-                content += readContentToString(files.get(i)[j]);
+                content += FileCreator.readContentToString(files.get(i)[j]);
             }
         }
         System.out.println(content);

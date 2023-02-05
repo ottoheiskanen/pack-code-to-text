@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="Removed duplicate code by adding FileCreator class. Changed GUI background color">
+    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="Removed duplicate code by adding FileCreator class. Changed GUI background color. Project name commenting added (untested).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NormalSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RecursiveSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursiveSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675630086542</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Removed duplicate code by adding FileCreator class. Changed GUI background color. Project name commenting added (untested).">
+      <created>1675631816736</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675631816736</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +232,7 @@
     <MESSAGE value="added new subdirectory search algorithm file which is still not in use" />
     <MESSAGE value="gui checkbox, optional search added,  !!!still needs testing and project naming!!!" />
     <MESSAGE value="Removed duplicate code by adding FileCreator class. Changed GUI background color" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed duplicate code by adding FileCreator class. Changed GUI background color" />
+    <MESSAGE value="Removed duplicate code by adding FileCreator class. Changed GUI background color. Project name commenting added (untested)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed duplicate code by adding FileCreator class. Changed GUI background color. Project name commenting added (untested)." />
   </component>
 </project>

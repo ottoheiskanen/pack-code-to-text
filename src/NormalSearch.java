@@ -52,25 +52,6 @@ public class NormalSearch {
         return filesFromEach;
     }
 
-    // Read given .extension file
-    public String readContentToString(String path) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader( path ));
-        StringBuilder stringBuilder = new StringBuilder();
-        String line = null;
-        String ls = System.getProperty("line.separator");
-        while ((line = reader.readLine()) != null) {
-            stringBuilder.append(line);
-            stringBuilder.append(ls);
-        }
-
-        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
-        reader.close();
-
-        String content = stringBuilder.toString();
-
-        return content;
-    }
-
     // Read all files that are marked with right file extension and saved in their corresponding project folders
     // after that save them into an output .txt file in the right order
     public void readFilesFromPath(ArrayList<String[]> files) throws IOException {
@@ -100,7 +81,7 @@ public class NormalSearch {
 
                         content += "\n//******************** "+projectName.toUpperCase()+" ********************\n\n";
                     }
-                    content += readContentToString(filePath);
+                    content += FileCreator.readContentToString(filePath);
                 }
 
             }

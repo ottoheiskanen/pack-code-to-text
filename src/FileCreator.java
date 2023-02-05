@@ -1,9 +1,24 @@
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class FileCreator {
+
+    public static String readContentToString(String path) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader( path ));
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = null;
+        String ls = System.getProperty("line.separator");
+        while ((line = reader.readLine()) != null) {
+            stringBuilder.append(line);
+            stringBuilder.append(ls);
+        }
+
+        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
+        reader.close();
+
+        String content = stringBuilder.toString();
+
+        return content;
+    }
     public static void createFile(String newFileLocation, String newFileName) throws IOException {
         File fileObj = new File(newFileLocation, newFileName);
         if (fileObj.createNewFile()) {
