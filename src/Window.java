@@ -16,6 +16,8 @@ public class Window extends JFrame {
     JButton createFileButton;
     JLabel inputLabel;
     JOptionPane messageBox ;
+    JLabel searchBoxLabel;
+    JCheckBox searchBox;
 
     public Window() {
 
@@ -25,7 +27,7 @@ public class Window extends JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         setLayout(null);
-        getContentPane().setBackground(Color.getHSBColor(198, 204, 200));
+        getContentPane().setBackground(Color.decode("#4dc3ff"));
 
         // Extension label
         fileExtensionLabel = new JLabel("Valitse haettavan koodin tiedostomuoto: ");
@@ -51,6 +53,11 @@ public class Window extends JFrame {
         // File location field
         fileLocationField = new JTextField();
         fileLocationField.setBounds(16,96,304,32);
+        // TESTING
+        if (TestValues.testing) {
+            fileLocationField.setText(TestValues.testLocation); // TEST VALUE
+        }
+
 
         // Input label
         inputLabel = new JLabel("Lisää tehtävien polut uudelle riville. Polun täytyy päättyä muodossa: '.../tehtävän-nimi/src/'");
@@ -59,8 +66,22 @@ public class Window extends JFrame {
         // Input pane
         inputPane = new JTextArea();
         inputPane.setBounds(16,160,588,224);
+        // TESTING
+        if (TestValues.testing) {
+            inputPane.setText(TestValues.testPaths);
+        }
 
+
+        // Alert
         messageBox = new JOptionPane();
+
+        // Search checkbox label
+        searchBoxLabel = new JLabel("Etsi alihakemistoista");
+        searchBoxLabel.setBounds(336,16,272,16);
+
+        // Search checkbox
+        searchBox = new JCheckBox();
+        searchBox.setBounds(336, 32, 272, 32);
 
         //Create file button
         createFileButton = new JButton("Luo tiedosto");
@@ -75,6 +96,11 @@ public class Window extends JFrame {
                 String extension = (String) fileExtensionBox.getSelectedItem();
                 String fileName = fileNameInputField.getText();
                 String fileLocation = fileLocationField.getText().replace("\\", "/");
+                boolean searchSubDirs = false;
+                if (searchBox.isSelected()) {
+                    searchSubDirs = true;
+                }
+
                 ArrayList<String> filePaths = new ArrayList<>();
 
                 // Normal array to arraylist for scalability of the program
@@ -87,10 +113,11 @@ public class Window extends JFrame {
                     }
                 }
 
-                InputData data = new InputData(extension, fileName, fileLocation, filePaths);
+                InputData data = new InputData(extension, fileName, fileLocation, filePaths, searchSubDirs);
 
                 // Start execution
                 try {
+                    System.out.println(searchSubDirs);
                     data.execute();
                     infoBox("Tiedosto luotu onnistuneesti!", "Tiedosto luotu");
                 } catch (IOException ex) {
@@ -110,6 +137,8 @@ public class Window extends JFrame {
         add(createFileButton);
         add(inputLabel);
         add(inputPane);
+        add(searchBoxLabel);
+        add(searchBox);
         setVisible(true);
     }
 

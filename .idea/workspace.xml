@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="added some if statements and string methods to remove whitespaces and empty entries">
+    <list default="true" id="69b006dc-e5d9-44d7-bc33-0426a75648bc" name="Changes" comment="Moved readContentToString-method to FileCreator, found weird bug when trying to do normal search on projects with sub-dirs">
+      <change afterPath="$PROJECT_DIR$/src/TestValues.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HandleFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandleFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NormalSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NormalSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -43,12 +50,18 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/School/Ohjelmointi2/viikko2/tehtava5&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/2023/java-src-to-txt&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -156,7 +169,49 @@
       <option name="project" value="LOCAL" />
       <updated>1674776173197</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added some if statements and string methods to remove whitespaces and empty entries">
+      <created>1674816984968</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674816984968</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added new subdirectory search algorithm file which is still not in use">
+      <created>1675265194481</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675265194481</updated>
+    </task>
+    <task id="LOCAL-00017" summary="gui checkbox, optional search added,  !!!still needs testing and project naming!!!">
+      <created>1675423587453</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675423587453</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Removed duplicate code by adding FileCreator class. Changed GUI background color">
+      <created>1675630086542</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675630086542</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Removed duplicate code by adding FileCreator class. Changed GUI background color. Project name commenting added (untested).">
+      <created>1675631816736</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675631816736</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Moved readContentToString-method to FileCreator, found weird bug when trying to do normal search on projects with sub-dirs">
+      <created>1675632946344</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675632946344</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +238,11 @@
     <MESSAGE value="small adjustments" />
     <MESSAGE value="added whitespace/line break warning" />
     <MESSAGE value="added some if statements and string methods to remove whitespaces and empty entries" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some if statements and string methods to remove whitespaces and empty entries" />
+    <MESSAGE value="added new subdirectory search algorithm file which is still not in use" />
+    <MESSAGE value="gui checkbox, optional search added,  !!!still needs testing and project naming!!!" />
+    <MESSAGE value="Removed duplicate code by adding FileCreator class. Changed GUI background color" />
+    <MESSAGE value="Removed duplicate code by adding FileCreator class. Changed GUI background color. Project name commenting added (untested)." />
+    <MESSAGE value="Moved readContentToString-method to FileCreator, found weird bug when trying to do normal search on projects with sub-dirs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved readContentToString-method to FileCreator, found weird bug when trying to do normal search on projects with sub-dirs" />
   </component>
 </project>
