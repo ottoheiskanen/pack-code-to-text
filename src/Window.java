@@ -16,7 +16,6 @@ public class Window extends JFrame {
     JButton createFileButton;
     JLabel inputLabel;
     JOptionPane messageBox ;
-
     JLabel searchBoxLabel;
     JCheckBox searchBox;
 
@@ -54,6 +53,11 @@ public class Window extends JFrame {
         // File location field
         fileLocationField = new JTextField();
         fileLocationField.setBounds(16,96,304,32);
+        // TESTING
+        if (TestValues.testing) {
+            fileLocationField.setText(TestValues.testLocation); // TEST VALUE
+        }
+
 
         // Input label
         inputLabel = new JLabel("Lisää tehtävien polut uudelle riville. Polun täytyy päättyä muodossa: '.../tehtävän-nimi/src/'");
@@ -62,6 +66,11 @@ public class Window extends JFrame {
         // Input pane
         inputPane = new JTextArea();
         inputPane.setBounds(16,160,588,224);
+        // TESTING
+        if (TestValues.testing) {
+            inputPane.setText(TestValues.testPaths);
+        }
+
 
         // Alert
         messageBox = new JOptionPane();

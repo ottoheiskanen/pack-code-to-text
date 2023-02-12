@@ -16,6 +16,24 @@ public class InputData {
         this.filePaths = filePaths;
         this.locationPath = locationPath;
         this.subDirs = subDirs;
+
+        // Check if location path ends with slash or not
+        if (!(this.locationPath.endsWith("/"))) {
+            this.locationPath += "/";
+        }
+
+        // Check if file name ends with right extension or not
+        if (!(this.fileName.endsWith(".txt"))) {
+            this.fileName += ".txt";
+        }
+
+        // Check if there is empty line breaks or whitespaces in paths
+        for (int i = 0; i < this.filePaths.size(); i++) {
+            this.filePaths.set(i, this.filePaths.get(i).trim());
+            if (this.filePaths.get(i).equals("")) {
+                this.filePaths.remove(i);
+            }
+        }
     }
 
     public void execute() throws IOException {
